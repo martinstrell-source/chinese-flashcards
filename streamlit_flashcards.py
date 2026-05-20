@@ -1,155 +1,132 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import json
-import random
-import re
-
-# Vowel → [tone1, tone2, tone3, tone4, tone5(neutral)]
-_TONE_MAP = {
-    "a": ["ā", "á", "ǎ", "à", "a"],
-    "e": ["ē", "é", "ě", "è", "e"],
-    "i": ["ī", "í", "ǐ", "ì", "i"],
-    "o": ["ō", "ó", "ǒ", "ò", "o"],
-    "u": ["ū", "ú", "ǔ", "ù", "u"],
-    "ü": ["ǖ", "ǘ", "ǚ", "ǜ", "ü"],
-    "v": ["ǖ", "ǘ", "ǚ", "ǜ", "ü"],  # v is a common alias for ü
-}
-
-def numeral_to_diacritic(text: str) -> str:
-    """Convert numeral-tone pinyin (ni3 hao3) to diacritic pinyin (nǐhǎo)."""
-    def replace_syllable(m):
-        vowels, tone = m.group(1).lower(), int(m.group(2))
-        chars = list(vowels)
-        target = None
-        for idx, ch in enumerate(chars):        # Rule 1: a or e takes the mark
-            if ch in ("a", "e"):
-                target = idx
-                break
-        if target is None:                      # Rule 2: in "ou", o takes it
-            ou = vowels.find("ou")
-            if ou != -1:
-                target = ou
-        if target is None:                      # Rule 3: last vowel takes it
-            for idx in range(len(chars) - 1, -1, -1):
-                if chars[idx] in _TONE_MAP:
-                    target = idx
-                    break
-        if target is not None and chars[target] in _TONE_MAP:
-            chars[target] = _TONE_MAP[chars[target]][tone - 1]
-        return "".join(chars)
-
-    normalised = re.sub(r"\(([1-5])\)", r"\1", text.lower())
-    result = re.sub(r"([a-züv]+)([1-5])", replace_syllable, normalised)
-    return result.replace(" ", "")
-
-
-def speak_button(text: str):
-    safe = text.replace("'", "\\'")
-    components.html(f"""
-        <button onclick="(function(){{
-            var u = new SpeechSynthesisUtterance('{safe}');
-            u.lang = 'zh-CN';
-            u.rate = 0.8;
-            window.speechSynthesis.speak(u);
-        }})()" style="
-            background: transparent;
-            border: 1px solid rgba(250,250,250,0.2);
-            border-radius: 8px;
-            color: rgb(250,250,250);
-            cursor: pointer;
-            font-size: 20px;
-            padding: 6px 20px;
-        ">🔊</button>
-    """, height=48)
+from utils.utils import (
+    all_cards, MAX_CATEGORY,
+    speak_button,
+    load_progress,
+    next_card, init_category, render_graduation, render_category_selection,
+)
+from utils.scoring import check_answer
 
 st.set_page_config(page_title="Chinese Flashcards", layout="centered")
 
-with open("flashcards.json", "r") as f:
-    cards = json.load(f)
+# ── Bootstrap ─────────────────────────────────────────────────────────────────
 
-total = st.session_state.get("total", len(cards))
-
-def init_session(deck=None):
-    if deck is None:
-        deck = cards.copy()
-    random.shuffle(deck)
-    st.session_state.queue = deck[1:]
-    st.session_state.card = deck[0]
-    st.session_state.checked = False
-    st.session_state.last_correct = None
-    st.session_state.correct = 0
-    st.session_state.incorrect = 0
-    st.session_state.answered = 0
-    st.session_state.total = len(deck)
-    st.session_state.missed = []
-    st.session_state.finished = False
-
-if "card" not in st.session_state:
-    init_session()
+if "selecting" not in st.session_state:
+    st.session_state.selecting = True
+if "card_stats" not in st.session_state:
+    st.session_state.card_stats = load_progress().get("card_stats", {})
 
 st.title("Chinese Flashcards")
+st.markdown("<style>[data-testid='stFormSubmitButton']{display:none}</style>", unsafe_allow_html=True)
 
-if st.session_state.finished:
-    correct = st.session_state.correct
-    incorrect = st.session_state.incorrect
-    answered = st.session_state.answered
-    st.markdown("### Round complete!" if answered == total else "### Round ended early")
+# ── Category selection screen ─────────────────────────────────────────────────
+
+if st.session_state.selecting:
+    render_category_selection()
+
+# ── Graduation screen ─────────────────────────────────────────────────────────
+
+elif st.session_state.graduated:
+    render_graduation()
+
+# ── Paused / end-run screen ───────────────────────────────────────────────────
+
+elif st.session_state.ended:
+    cat = st.session_state.category
+    mastered_count = len(st.session_state.mastered)
+    category_size  = st.session_state.category_size
+    correct        = st.session_state.correct
+    incorrect      = st.session_state.incorrect
+    answered       = correct + incorrect
+    st.markdown("### Session paused")
     col1, col2, col3 = st.columns(3)
-    col1.metric("Answered", f"{answered} / {total}")
-    col2.metric("Correct", correct)
-    col3.metric("Incorrect", incorrect)
+    col1.metric("Category", cat)
+    col2.metric("Mastered", f"{mastered_count} / {category_size}")
+    col3.metric("Remaining", category_size - mastered_count)
+    st.divider()
+    st.markdown("**This session**")
+    col4, col5, col6 = st.columns(3)
+    col4.metric("Answered", answered)
+    col5.metric("Correct", correct)
+    col6.metric("Incorrect", incorrect)
     col_a, col_b = st.columns(2)
     with col_a:
-        if st.button("Start Over"):
-            init_session()
+        if st.button("Continue"):
+            st.session_state.ended = False
             st.rerun()
     with col_b:
-        missed = st.session_state.get("missed", [])
-        if missed and st.button(f"Replay Incorrect ({len(missed)})"):
-            init_session(deck=missed)
+        if st.button("Choose category"):
+            st.session_state.selecting = True
             st.rerun()
+
+# ── Main card view ────────────────────────────────────────────────────────────
+
 else:
-    answered = st.session_state.answered
-    st.progress(answered / total, text=f"{answered} / {total} cards")
+    card           = st.session_state.card
+    mastered_count = len(st.session_state.mastered)
+    category_size  = st.session_state.category_size
+    cat            = st.session_state.category
+
+    st.markdown(f"**Category {cat}** — {mastered_count} / {category_size} mastered")
+    st.progress(mastered_count / category_size)
     st.caption(f"✓ {st.session_state.correct}   ✗ {st.session_state.incorrect}")
 
-    card = st.session_state.card
     st.markdown(f"# {card['hanzi']}")
 
-    guess = st.text_input("Enter pinyin:", key=f"guess_{answered}")
+    stats = st.session_state.card_stats.get(card["hanzi"], {})
+    if stats:
+        last = stats["last_tested"][:10] if stats.get("last_tested") else "—"
+        st.caption(
+            f"Tested {stats['times_used']}×  |  "
+            f"✓ {stats['correct']}  ✗ {stats['incorrect']}  |  "
+            f"Last: {last}"
+        )
+    else:
+        st.caption("Never tested")
 
-    col1, col2 = st.columns(2)
+    streak = st.session_state.streaks.get(card["hanzi"], 0)
+    st.caption("⭐" * streak + "☆" * (5 - streak) + f"  {streak}/5")
 
-    with col1:
-        if st.button("Check Answer", disabled=st.session_state.checked):
-            is_correct = numeral_to_diacritic(guess.strip()) == card["pinyin"]
-            st.session_state.last_correct = is_correct
-            st.session_state.checked = True
-            st.session_state.answered += 1
-            if is_correct:
-                st.session_state.correct += 1
+    with st.form(f"pinyin_form_{st.session_state.round_count}"):
+        guess = st.text_input("Enter pinyin:", disabled=st.session_state.checked)
+        submitted = st.form_submit_button("check")
+
+    if not st.session_state.checked:
+        components.html(
+            "<script>window.parent.document.querySelector('[data-testid=\"stTextInput\"] input').focus();</script>",
+            height=0,
+        )
+
+    if submitted and not st.session_state.checked:
+        check_answer(guess, card, category_size)
+        st.rerun()
+
+    if st.button("New Card", disabled=not st.session_state.checked):
+        if not st.session_state.graduated:
+            nxt = next_card()
+            if nxt is None:
+                st.session_state.graduated = True
             else:
-                st.session_state.incorrect += 1
-                st.session_state.missed.append(card)
-            if st.session_state.answered == total:
-                st.session_state.finished = True
-            st.rerun()
-
-    with col2:
-        if st.button("New Card", disabled=not st.session_state.checked):
-            st.session_state.card = st.session_state.queue.pop(0)
-            st.session_state.checked = False
-            st.session_state.last_correct = None
-            st.rerun()
+                st.session_state.card         = nxt
+                st.session_state.checked      = False
+                st.session_state.last_correct = None
+                st.session_state.round_count += 1
+        st.rerun()
 
     if st.session_state.checked:
+        hanzi = card["hanzi"]
         if st.session_state.last_correct:
-            st.success("Correct!")
+            if hanzi in st.session_state.mastered:
+                st.success("Correct! Character mastered!")
+            else:
+                st.success(f"Correct! Streak: {st.session_state.streaks.get(hanzi, 0)}/5")
         else:
-            st.error("Incorrect")
+            st.error("Incorrect — streak reset to 0")
         st.markdown(f"**{card['pinyin']}** — {card['meaning']}")
+        speak_button(card["hanzi"])
 
     st.divider()
     if st.button("End run"):
-        st.session_state.finished = True
+        st.session_state.ended = True
         st.rerun()
