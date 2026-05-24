@@ -1,10 +1,13 @@
+import logging
 import streamlit as st
 import streamlit.components.v1 as components
+
+logging.getLogger("gtts").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 from utils.utils import (
-    all_cards, MAX_CATEGORY,
     speak_button,
     load_progress,
-    next_card, init_category, render_graduation, render_category_selection,
+    next_card, render_graduation, render_category_selection,
 )
 from utils.scoring import check_answer
 
@@ -16,6 +19,8 @@ if "selecting" not in st.session_state:
     st.session_state.selecting = True
 if "card_stats" not in st.session_state:
     st.session_state.card_stats = load_progress().get("card_stats", {})
+if "show_progress" not in st.session_state:
+    st.session_state.show_progress = False
 
 st.title("Chinese Flashcards")
 st.markdown("<style>[data-testid='stFormSubmitButton']{display:none}</style>", unsafe_allow_html=True)
@@ -41,7 +46,7 @@ elif st.session_state.ended:
     answered       = correct + incorrect
     st.markdown("### Session paused")
     col1, col2, col3 = st.columns(3)
-    col1.metric("Category", cat)
+    col1.metric("Level", cat)
     col2.metric("Mastered", f"{mastered_count} / {category_size}")
     col3.metric("Remaining", category_size - mastered_count)
     st.divider()
@@ -56,7 +61,7 @@ elif st.session_state.ended:
             st.session_state.ended = False
             st.rerun()
     with col_b:
-        if st.button("Choose category"):
+        if st.button("Choose level"):
             st.session_state.selecting = True
             st.rerun()
 
@@ -68,25 +73,19 @@ else:
     category_size  = st.session_state.category_size
     cat            = st.session_state.category
 
-    st.markdown(f"**Category {cat}** — {mastered_count} / {category_size} mastered")
-    st.progress(mastered_count / category_size)
-    st.caption(f"✓ {st.session_state.correct}   ✗ {st.session_state.incorrect}")
-
     st.markdown(f"# {card['hanzi']}")
 
     stats = st.session_state.card_stats.get(card["hanzi"], {})
-    if stats:
-        last = stats["last_tested"][:10] if stats.get("last_tested") else "—"
-        st.caption(
-            f"Tested {stats['times_used']}×  |  "
-            f"✓ {stats['correct']}  ✗ {stats['incorrect']}  |  "
-            f"Last: {last}"
-        )
-    else:
-        st.caption("Never tested")
-
     streak = st.session_state.streaks.get(card["hanzi"], 0)
-    st.caption("⭐" * streak + "☆" * (5 - streak) + f"  {streak}/5")
+
+    if not stats:
+        st.caption("🆕 First time tested")
+    elif streak == 0:
+        st.caption("❌ Recently missed")
+    elif stats.get("memory_strength", 0.5) < 0.5:
+        st.caption("⚠️ Needs reinforcement")
+    else:
+        st.caption("✅ On the right track")
 
     with st.form(f"pinyin_form_{st.session_state.round_count}"):
         guess = st.text_input("Enter pinyin:", disabled=st.session_state.checked)
@@ -99,6 +98,7 @@ else:
         )
 
     if submitted and not st.session_state.checked:
+        st.session_state.prev_streak = st.session_state.streaks.get(card["hanzi"], 0)
         check_answer(guess, card, category_size)
         st.rerun()
 
@@ -122,11 +122,39 @@ else:
             else:
                 st.success(f"Correct! Streak: {st.session_state.streaks.get(hanzi, 0)}/5")
         else:
-            st.error("Incorrect — streak reset to 0")
+            prev = st.session_state.get("prev_streak", 0)
+            suffix = " — streak reset to 0" if prev > 0 else ""
+            label = "Incorrect tone" if st.session_state.get("wrong_tone") else "Incorrect"
+            st.error(f"{label}{suffix}")
+            confused = st.session_state.get("confused_card")
+            if confused:
+                st.markdown(f"Confused with **{confused['hanzi']}** ({confused['pinyin']} — {confused['meaning']})?")
         st.markdown(f"**{card['pinyin']}** — {card['meaning']}")
+        if card.get("example_word"):
+            st.caption(f"e.g. {card['example_word']} ({card['example_pinyin']}) — {card['example_meaning']}")
+        radical = card.get("radical", "")
+        radical_meaning = card.get("radical_meaning", "")
+        if radical:
+            st.caption(f"Radical: {radical} — {radical_meaning}" if radical_meaning else f"Radical: {radical}")
         speak_button(card["hanzi"])
 
     st.divider()
-    if st.button("End run"):
-        st.session_state.ended = True
-        st.rerun()
+    if st.session_state.show_progress:
+        st.markdown(f"**Level {cat}** — {mastered_count} / {category_size} mastered")
+        st.progress(mastered_count / category_size)
+        st.caption(f"✓ {st.session_state.correct}   ✗ {st.session_state.incorrect}")
+
+        streak_total = sum(min(5, v) for v in st.session_state.streaks.values())
+        st.caption(f"Mastery progress: {streak_total} / 500")
+        st.progress(streak_total / 500)
+
+    col_end, col_prog = st.columns([3, 1])
+    with col_end:
+        if st.button("End run"):
+            st.session_state.ended = True
+            st.rerun()
+    with col_prog:
+        label = "Hide progress" if st.session_state.show_progress else "Show progress"
+        if st.button(label):
+            st.session_state.show_progress = not st.session_state.show_progress
+            st.rerun()

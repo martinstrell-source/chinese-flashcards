@@ -274,15 +274,429 @@
       "incorrect": 0
     },
     "3": {
+      "mastered": [
+        "真",
+        "非",
+        "展",
+        "象",
+        "件",
+        "必",
+        "资",
+        "区",
+        "处",
+        "许",
+        "女",
+        "结",
+        "平",
+        "队",
+        "别",
+        "听",
+        "即",
+        "场",
+        "科",
+        "更",
+        "何",
+        "认",
+        "接",
+        "难",
+        "解",
+        "像",
+        "决",
+        "变",
+        "感",
+        "眼",
+        "权",
+        "口",
+        "指",
+        "期",
+        "尔",
+        "白",
+        "管",
+        "思",
+        "报",
+        "且",
+        "打",
+        "王",
+        "马",
+        "社",
+        "量",
+        "光",
+        "空",
+        "基",
+        "计",
+        "入",
+        "少",
+        "山",
+        "义",
+        "务",
+        "统",
+        "治",
+        "受",
+        "总",
+        "却",
+        "达",
+        "条",
+        "命",
+        "建",
+        "数",
+        "各",
+        "名",
+        "克",
+        "反",
+        "再",
+        "书",
+        "司",
+        "强",
+        "五",
+        "气",
+        "目",
+        "四",
+        "保",
+        "市",
+        "太",
+        "直",
+        "形",
+        "至",
+        "则",
+        "水",
+        "安",
+        "活",
+        "系",
+        "界",
+        "题",
+        "德",
+        "做",
+        "便",
+        "电",
+        "走",
+        "才",
+        "论",
+        "放",
+        "金",
+        "神",
+        "几"
+      ],
+      "streaks": {
+        "治": 5,
+        "直": 5,
+        "更": 5,
+        "活": 5,
+        "女": 5,
+        "资": 5,
+        "才": 5,
+        "期": 5,
+        "达": 5,
+        "再": 5,
+        "指": 5,
+        "队": 5,
+        "统": 5,
+        "条": 5,
+        "几": 5,
+        "非": 5,
+        "气": 5,
+        "接": 5,
+        "场": 5,
+        "保": 5,
+        "受": 5,
+        "放": 5,
+        "平": 5,
+        "量": 5,
+        "五": 5,
+        "各": 5,
+        "口": 5,
+        "强": 5,
+        "即": 5,
+        "许": 5,
+        "系": 5,
+        "报": 5,
+        "总": 5,
+        "安": 5,
+        "四": 5,
+        "处": 5,
+        "命": 5,
+        "思": 5,
+        "反": 5,
+        "论": 5,
+        "太": 5,
+        "入": 5,
+        "打": 5,
+        "听": 5,
+        "数": 5,
+        "眼": 5,
+        "走": 5,
+        "建": 5,
+        "白": 5,
+        "电": 5,
+        "市": 5,
+        "认": 5,
+        "像": 5,
+        "王": 5,
+        "名": 5,
+        "展": 5,
+        "务": 5,
+        "山": 5,
+        "司": 5,
+        "基": 5,
+        "神": 5,
+        "德": 5,
+        "变": 5,
+        "且": 5,
+        "便": 5,
+        "空": 5,
+        "尔": 5,
+        "形": 5,
+        "计": 5,
+        "感": 5,
+        "必": 5,
+        "别": 5,
+        "义": 5,
+        "象": 5,
+        "金": 5,
+        "件": 5,
+        "马": 5,
+        "做": 5,
+        "真": 5,
+        "书": 5,
+        "却": 5,
+        "则": 5,
+        "至": 5,
+        "结": 5,
+        "权": 5,
+        "光": 5,
+        "决": 5,
+        "题": 5,
+        "管": 5,
+        "水": 5,
+        "区": 5,
+        "目": 5,
+        "科": 5,
+        "克": 5,
+        "界": 5,
+        "少": 5,
+        "解": 5,
+        "社": 5,
+        "难": 5,
+        "何": 5
+      },
+      "correct": 653,
+      "incorrect": 493
+    },
+    "4": {
+      "mastered": [
+        "确",
+        "万",
+        "式",
+        "觉",
+        "品",
+        "笑",
+        "服",
+        "联",
+        "罗",
+        "车",
+        "今",
+        "调",
+        "影",
+        "取",
+        "字",
+        "观",
+        "边",
+        "记",
+        "院",
+        "英",
+        "风",
+        "往",
+        "清",
+        "夫",
+        "师",
+        "格",
+        "望",
+        "远",
+        "争",
+        "程",
+        "死",
+        "快",
+        "流",
+        "张",
+        "组",
+        "办",
+        "切",
+        "据",
+        "令",
+        "备",
+        "告",
+        "带",
+        "运",
+        "收",
+        "完",
+        "怎",
+        "存",
+        "失",
+        "近",
+        "转",
+        "传",
+        "规",
+        "设",
+        "造",
+        "具",
+        "言",
+        "极",
+        "兵",
+        "拉",
+        "击",
+        "色",
+        "林",
+        "求",
+        "叫",
+        "候",
+        "持",
+        "济",
+        "士",
+        "连",
+        "单",
+        "南",
+        "住",
+        "议",
+        "交",
+        "识",
+        "呢",
+        "准",
+        "布",
+        "未",
+        "台",
+        "根",
+        "让",
+        "共",
+        "改",
+        "证",
+        "路",
+        "始",
+        "飞",
+        "类",
+        "干",
+        "元",
+        "领",
+        "爱",
+        "该",
+        "每",
+        "北",
+        "术",
+        "亲",
+        "步",
+        "导"
+      ],
+      "streaks": {
+        "色": 5,
+        "确": 5,
+        "夫": 5,
+        "改": 5,
+        "济": 5,
+        "住": 5,
+        "每": 5,
+        "呢": 5,
+        "切": 5,
+        "领": 5,
+        "术": 5,
+        "院": 5,
+        "类": 5,
+        "备": 5,
+        "品": 5,
+        "带": 5,
+        "收": 5,
+        "边": 5,
+        "导": 5,
+        "近": 5,
+        "求": 5,
+        "证": 5,
+        "候": 5,
+        "言": 5,
+        "风": 5,
+        "车": 5,
+        "死": 5,
+        "清": 5,
+        "未": 5,
+        "台": 5,
+        "叫": 5,
+        "远": 5,
+        "亲": 5,
+        "根": 5,
+        "调": 5,
+        "据": 5,
+        "干": 5,
+        "观": 5,
+        "议": 5,
+        "办": 5,
+        "往": 5,
+        "英": 5,
+        "元": 5,
+        "取": 5,
+        "兵": 5,
+        "望": 5,
+        "字": 5,
+        "击": 5,
+        "今": 5,
+        "飞": 5,
+        "极": 5,
+        "路": 5,
+        "林": 5,
+        "服": 5,
+        "始": 5,
+        "联": 5,
+        "觉": 5,
+        "令": 5,
+        "快": 5,
+        "影": 5,
+        "南": 5,
+        "让": 5,
+        "罗": 5,
+        "记": 5,
+        "告": 5,
+        "组": 5,
+        "步": 5,
+        "单": 5,
+        "完": 5,
+        "共": 5,
+        "连": 5,
+        "师": 5,
+        "规": 5,
+        "笑": 5,
+        "持": 5,
+        "格": 5,
+        "争": 5,
+        "式": 5,
+        "传": 5,
+        "士": 5,
+        "布": 5,
+        "识": 5,
+        "程": 5,
+        "造": 5,
+        "准": 5,
+        "具": 5,
+        "运": 5,
+        "爱": 5,
+        "该": 5,
+        "设": 5,
+        "存": 5,
+        "失": 5,
+        "拉": 5,
+        "张": 5,
+        "流": 5,
+        "转": 5,
+        "交": 5,
+        "怎": 5,
+        "北": 5,
+        "万": 5
+      },
+      "correct": 633,
+      "incorrect": 500
+    },
+    "5": {
       "mastered": [],
       "streaks": {
-        "治": 0,
-        "直": 0,
-        "更": 0,
-        "活": 1
+        "医": 0,
+        "支": 0
       },
-      "correct": 1,
-      "incorrect": 3
+      "correct": 0,
+      "incorrect": 2
     }
   },
   "card_stats": {
@@ -1109,28 +1523,1418 @@
       "last_tested": "2026-05-20T15:25:46.749756"
     },
     "治": {
-      "times_used": 1,
-      "correct": 0,
-      "incorrect": 1,
-      "last_tested": "2026-05-20T15:30:49.629030"
+      "times_used": 29,
+      "correct": 12,
+      "incorrect": 17,
+      "last_tested": "2026-05-21T15:36:49.397952",
+      "memory_strength": 0.7
     },
     "直": {
-      "times_used": 1,
-      "correct": 0,
-      "incorrect": 1,
-      "last_tested": "2026-05-20T15:31:00.818762"
+      "times_used": 18,
+      "correct": 9,
+      "incorrect": 9,
+      "last_tested": "2026-05-21T15:20:30.359472",
+      "memory_strength": 0.5
     },
     "更": {
+      "times_used": 16,
+      "correct": 9,
+      "incorrect": 7,
+      "last_tested": "2026-05-21T15:09:54.443294",
+      "memory_strength": 0.5
+    },
+    "活": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T14:32:10.411731",
+      "memory_strength": 0.8999999999999999
+    },
+    "女": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:29:09.334224",
+      "memory_strength": 0.7999999999999999
+    },
+    "资": {
+      "times_used": 16,
+      "correct": 8,
+      "incorrect": 8,
+      "last_tested": "2026-05-21T15:01:06.726052",
+      "memory_strength": 0.5
+    },
+    "才": {
+      "times_used": 8,
+      "correct": 6,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T14:50:03.990762",
+      "memory_strength": 0.7
+    },
+    "期": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:35:14.517573",
+      "memory_strength": 0.9999999999999999
+    },
+    "达": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:44:56.103927",
+      "memory_strength": 0.7999999999999999
+    },
+    "再": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:35:30.826804",
+      "memory_strength": 0.9999999999999999
+    },
+    "指": {
+      "times_used": 17,
+      "correct": 10,
+      "incorrect": 7,
+      "last_tested": "2026-05-21T14:58:19.144058",
+      "memory_strength": 0.5
+    },
+    "队": {
+      "times_used": 15,
+      "correct": 10,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T14:54:21.048658",
+      "memory_strength": 0.6
+    },
+    "统": {
+      "times_used": 13,
+      "correct": 5,
+      "incorrect": 8,
+      "last_tested": "2026-05-21T14:23:57.219046",
+      "memory_strength": 0.5
+    },
+    "条": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:21:36.023612",
+      "memory_strength": 0.5
+    },
+    "几": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T14:49:54.303631",
+      "memory_strength": 0.5
+    },
+    "非": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:07:22.569161",
+      "memory_strength": 0.7999999999999999
+    },
+    "气": {
+      "times_used": 7,
+      "correct": 6,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:27:37.583823",
+      "memory_strength": 0.8999999999999999
+    },
+    "接": {
+      "times_used": 24,
+      "correct": 6,
+      "incorrect": 18,
+      "last_tested": "2026-05-21T15:30:48.742915",
+      "memory_strength": 0.5
+    },
+    "场": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:48:34.671993",
+      "memory_strength": 0.5
+    },
+    "保": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T14:27:34.415426",
+      "memory_strength": 0.5
+    },
+    "受": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:02:36.069493",
+      "memory_strength": 0.7999999999999999
+    },
+    "放": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:42:46.865721",
+      "memory_strength": 0.5
+    },
+    "平": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:00:07.525611",
+      "memory_strength": 0.6
+    },
+    "量": {
+      "times_used": 15,
+      "correct": 11,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T15:28:04.080482",
+      "memory_strength": 0.7999999999999999
+    },
+    "五": {
+      "times_used": 7,
+      "correct": 6,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:28:17.407503",
+      "memory_strength": 0.8999999999999999
+    },
+    "各": {
+      "times_used": 15,
+      "correct": 10,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T15:23:38.732979",
+      "memory_strength": 0.5
+    },
+    "口": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:10:25.121232",
+      "memory_strength": 0.9999999999999999
+    },
+    "强": {
+      "times_used": 12,
+      "correct": 9,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T15:27:32.998684",
+      "memory_strength": 0.7999999999999998
+    },
+    "即": {
+      "times_used": 32,
+      "correct": 7,
+      "incorrect": 25,
+      "last_tested": "2026-05-21T15:34:51.601270",
+      "memory_strength": 0.5
+    },
+    "许": {
+      "times_used": 25,
+      "correct": 8,
+      "incorrect": 17,
+      "last_tested": "2026-05-21T15:03:53.106654",
+      "memory_strength": 0.5
+    },
+    "系": {
+      "times_used": 22,
+      "correct": 6,
+      "incorrect": 16,
+      "last_tested": "2026-05-21T15:26:26.124408",
+      "memory_strength": 0.5
+    },
+    "报": {
+      "times_used": 14,
+      "correct": 8,
+      "incorrect": 6,
+      "last_tested": "2026-05-21T14:38:07.492293",
+      "memory_strength": 0.5
+    },
+    "总": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:16:42.585217",
+      "memory_strength": 0.7999999999999999
+    },
+    "安": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:09:21.362056",
+      "memory_strength": 0.9999999999999999
+    },
+    "四": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:36:54.034989",
+      "memory_strength": 0.9999999999999999
+    },
+    "处": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:49:41.498806",
+      "memory_strength": 0.7999999999999999
+    },
+    "命": {
+      "times_used": 14,
+      "correct": 8,
+      "incorrect": 6,
+      "last_tested": "2026-05-21T15:18:26.174767",
+      "memory_strength": 0.5
+    },
+    "思": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:18:20.888887",
+      "memory_strength": 0.6
+    },
+    "反": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:06:27.748189",
+      "memory_strength": 0.7999999999999999
+    },
+    "论": {
+      "times_used": 9,
+      "correct": 6,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:41:19.603715",
+      "memory_strength": 0.5
+    },
+    "太": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:00:26.567854",
+      "memory_strength": 0.9999999999999999
+    },
+    "入": {
+      "times_used": 8,
+      "correct": 6,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:18:53.993206",
+      "memory_strength": 0.6999999999999998
+    },
+    "打": {
+      "times_used": 8,
+      "correct": 7,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:36:14.363991",
+      "memory_strength": 0.9999999999999999
+    },
+    "听": {
+      "times_used": 11,
+      "correct": 7,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T15:17:35.271766",
+      "memory_strength": 0.5
+    },
+    "数": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:06:11.435225",
+      "memory_strength": 0.5
+    },
+    "眼": {
+      "times_used": 10,
+      "correct": 5,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T14:34:30.802817",
+      "memory_strength": 0.5
+    },
+    "走": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:33:50.416358",
+      "memory_strength": 0.9999999999999999
+    },
+    "建": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:31:30.984964",
+      "memory_strength": 0.9999999999999999
+    },
+    "白": {
+      "times_used": 8,
+      "correct": 7,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:32:43.847430",
+      "memory_strength": 0.9999999999999999
+    },
+    "电": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:28:34.079379",
+      "memory_strength": 0.9999999999999999
+    },
+    "市": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:32:35.946871",
+      "memory_strength": 0.9999999999999999
+    },
+    "认": {
+      "times_used": 10,
+      "correct": 6,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T14:56:53.451697",
+      "memory_strength": 0.5
+    },
+    "像": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:24:18.015684",
+      "memory_strength": 0.9999999999999999
+    },
+    "王": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:22:52.970649",
+      "memory_strength": 0.9999999999999999
+    },
+    "名": {
+      "times_used": 26,
+      "correct": 16,
+      "incorrect": 10,
+      "last_tested": "2026-05-21T15:36:22.344740",
+      "memory_strength": 0.5
+    },
+    "展": {
+      "times_used": 16,
+      "correct": 7,
+      "incorrect": 9,
+      "last_tested": "2026-05-21T15:02:32.369115",
+      "memory_strength": 0.5
+    },
+    "务": {
+      "times_used": 24,
+      "correct": 5,
+      "incorrect": 19,
+      "last_tested": "2026-05-21T15:35:26.868147",
+      "memory_strength": 0.5
+    },
+    "山": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:32:04.790965",
+      "memory_strength": 0.9999999999999999
+    },
+    "司": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:42:51.443708",
+      "memory_strength": 0.7999999999999999
+    },
+    "基": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:56:28.647642",
+      "memory_strength": 0.5
+    },
+    "神": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:37:38.905375",
+      "memory_strength": 0.5
+    },
+    "德": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:28:13.439500",
+      "memory_strength": 0.9999999999999999
+    },
+    "变": {
+      "times_used": 16,
+      "correct": 9,
+      "incorrect": 7,
+      "last_tested": "2026-05-21T15:26:02.153692",
+      "memory_strength": 0.7
+    },
+    "且": {
+      "times_used": 36,
+      "correct": 8,
+      "incorrect": 28,
+      "last_tested": "2026-05-21T15:35:55.043393",
+      "memory_strength": 0.5
+    },
+    "便": {
+      "times_used": 10,
+      "correct": 9,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:37:07.595057",
+      "memory_strength": 1.0
+    },
+    "空": {
+      "times_used": 10,
+      "correct": 6,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T14:43:58.562325",
+      "memory_strength": 0.5
+    },
+    "尔": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T14:52:48.758463",
+      "memory_strength": 0.6
+    },
+    "形": {
+      "times_used": 14,
+      "correct": 9,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T15:28:25.772526",
+      "memory_strength": 0.7
+    },
+    "计": {
+      "times_used": 20,
+      "correct": 5,
+      "incorrect": 15,
+      "last_tested": "2026-05-21T15:23:48.769520",
+      "memory_strength": 0.5
+    },
+    "感": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:32:47.640122",
+      "memory_strength": 0.9999999999999999
+    },
+    "必": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:18:35.042128",
+      "memory_strength": 0.9999999999999999
+    },
+    "别": {
+      "times_used": 9,
+      "correct": 7,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:22:48.062366",
+      "memory_strength": 0.7999999999999999
+    },
+    "义": {
+      "times_used": 23,
+      "correct": 7,
+      "incorrect": 16,
+      "last_tested": "2026-05-21T15:28:21.975322",
+      "memory_strength": 0.5
+    },
+    "象": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:16:34.455399",
+      "memory_strength": 0.9999999999999999
+    },
+    "金": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T14:56:05.276995",
+      "memory_strength": 0.9999999999999999
+    },
+    "件": {
+      "times_used": 24,
+      "correct": 11,
+      "incorrect": 13,
+      "last_tested": "2026-05-21T15:10:32.550207",
+      "memory_strength": 0.5
+    },
+    "马": {
+      "times_used": 7,
+      "correct": 6,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:51:38.393941",
+      "memory_strength": 0.8999999999999999
+    },
+    "做": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T15:08:48.642471",
+      "memory_strength": 0.5
+    },
+    "真": {
+      "times_used": 9,
+      "correct": 5,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T14:57:05.946402",
+      "memory_strength": 0.5
+    },
+    "书": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:03:37.954844",
+      "memory_strength": 0.9999999999999999
+    },
+    "却": {
+      "times_used": 39,
+      "correct": 11,
+      "incorrect": 28,
+      "last_tested": "2026-05-21T15:36:45.364686",
+      "memory_strength": 0.5
+    },
+    "则": {
+      "times_used": 28,
+      "correct": 5,
+      "incorrect": 23,
+      "last_tested": "2026-05-21T15:31:25.271216",
+      "memory_strength": 0.5
+    },
+    "至": {
+      "times_used": 23,
+      "correct": 10,
+      "incorrect": 13,
+      "last_tested": "2026-05-21T15:26:31.952287",
+      "memory_strength": 0.5
+    },
+    "结": {
+      "times_used": 26,
+      "correct": 13,
+      "incorrect": 13,
+      "last_tested": "2026-05-21T15:36:08.775855",
+      "memory_strength": 0.5
+    },
+    "权": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:05:27.002996",
+      "memory_strength": 0.6
+    },
+    "光": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:18:31.341635",
+      "memory_strength": 0.9999999999999999
+    },
+    "决": {
+      "times_used": 18,
+      "correct": 5,
+      "incorrect": 13,
+      "last_tested": "2026-05-21T15:04:45.877328",
+      "memory_strength": 0.5
+    },
+    "题": {
+      "times_used": 7,
+      "correct": 6,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:48:27.609359",
+      "memory_strength": 0.8999999999999999
+    },
+    "管": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-21T14:49:46.413178",
+      "memory_strength": 0.5
+    },
+    "水": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:31:58.300851",
+      "memory_strength": 0.9999999999999999
+    },
+    "区": {
+      "times_used": 9,
+      "correct": 7,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:22:55.800621",
+      "memory_strength": 0.7999999999999998
+    },
+    "目": {
+      "times_used": 9,
+      "correct": 8,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:37:11.614700",
+      "memory_strength": 1.0
+    },
+    "科": {
+      "times_used": 15,
+      "correct": 10,
+      "incorrect": 5,
+      "last_tested": "2026-05-21T15:05:57.511218",
+      "memory_strength": 0.6
+    },
+    "克": {
+      "times_used": 12,
+      "correct": 8,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T15:02:49.594802",
+      "memory_strength": 0.5
+    },
+    "界": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T14:46:29.120945",
+      "memory_strength": 0.7999999999999999
+    },
+    "少": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-21T15:27:42.026170",
+      "memory_strength": 0.9999999999999999
+    },
+    "解": {
+      "times_used": 12,
+      "correct": 8,
+      "incorrect": 4,
+      "last_tested": "2026-05-21T15:24:02.835715",
+      "memory_strength": 0.5
+    },
+    "社": {
+      "times_used": 17,
+      "correct": 6,
+      "incorrect": 11,
+      "last_tested": "2026-05-21T15:30:36.231398",
+      "memory_strength": 0.5
+    },
+    "难": {
+      "times_used": 9,
+      "correct": 7,
+      "incorrect": 2,
+      "last_tested": "2026-05-21T15:26:45.255532",
+      "memory_strength": 0.7999999999999999
+    },
+    "何": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-21T15:06:00.842406",
+      "memory_strength": 0.7999999999999999
+    },
+    "色": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:25:29.311195",
+      "memory_strength": 0.5
+    },
+    "确": {
+      "times_used": 38,
+      "correct": 9,
+      "incorrect": 29,
+      "last_tested": "2026-05-24T13:11:13.027900",
+      "memory_strength": 0.5
+    },
+    "夫": {
+      "times_used": 18,
+      "correct": 12,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T13:11:33.900613",
+      "memory_strength": 0.7999999999999999
+    },
+    "改": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:10:20.416339",
+      "memory_strength": 0.9999999999999999
+    },
+    "济": {
+      "times_used": 29,
+      "correct": 9,
+      "incorrect": 20,
+      "last_tested": "2026-05-24T13:05:45.867753",
+      "memory_strength": 0.5
+    },
+    "住": {
+      "times_used": 9,
+      "correct": 6,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:52:30.081088",
+      "memory_strength": 0.5
+    },
+    "每": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:11:44.354816",
+      "memory_strength": 0.9999999999999999
+    },
+    "呢": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:41:44.790047",
+      "memory_strength": 0.6
+    },
+    "切": {
+      "times_used": 8,
+      "correct": 7,
+      "incorrect": 1,
+      "last_tested": "2026-05-24T12:59:42.185084",
+      "memory_strength": 0.9999999999999999
+    },
+    "领": {
+      "times_used": 19,
+      "correct": 9,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T13:00:09.710891",
+      "memory_strength": 0.5
+    },
+    "术": {
+      "times_used": 12,
+      "correct": 6,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T12:29:44.567222",
+      "memory_strength": 0.5
+    },
+    "院": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T11:45:13.001244",
+      "memory_strength": 0.5
+    },
+    "类": {
+      "times_used": 13,
+      "correct": 5,
+      "incorrect": 8,
+      "last_tested": "2026-05-24T12:50:25.585759",
+      "memory_strength": 0.5
+    },
+    "备": {
+      "times_used": 11,
+      "correct": 7,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T11:59:31.575330",
+      "memory_strength": 0.5
+    },
+    "品": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T12:26:02.913655",
+      "memory_strength": 0.9999999999999999
+    },
+    "带": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T12:48:00.664341",
+      "memory_strength": 0.9999999999999999
+    },
+    "收": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:50:05.518713",
+      "memory_strength": 0.5
+    },
+    "边": {
+      "times_used": 9,
+      "correct": 5,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T12:13:57.308561",
+      "memory_strength": 0.5
+    },
+    "导": {
+      "times_used": 10,
+      "correct": 6,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T11:49:29.304035",
+      "memory_strength": 0.5
+    },
+    "近": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-24T12:42:54.464252",
+      "memory_strength": 0.7999999999999999
+    },
+    "求": {
+      "times_used": 21,
+      "correct": 6,
+      "incorrect": 15,
+      "last_tested": "2026-05-24T12:42:11.035396",
+      "memory_strength": 0.5
+    },
+    "证": {
+      "times_used": 14,
+      "correct": 10,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T13:09:46.977792",
+      "memory_strength": 0.6999999999999998
+    },
+    "候": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-24T12:54:30.420740",
+      "memory_strength": 0.7999999999999999
+    },
+    "言": {
+      "times_used": 9,
+      "correct": 5,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T12:39:25.283066",
+      "memory_strength": 0.5
+    },
+    "风": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T12:45:08.216851",
+      "memory_strength": 0.9999999999999999
+    },
+    "车": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T11:44:27.228434",
+      "memory_strength": 0.9999999999999999
+    },
+    "死": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T12:49:20.244758",
+      "memory_strength": 0.9999999999999999
+    },
+    "清": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T11:52:00.899965",
+      "memory_strength": 0.9999999999999999
+    },
+    "未": {
+      "times_used": 18,
+      "correct": 10,
+      "incorrect": 8,
+      "last_tested": "2026-05-24T13:01:27.462921",
+      "memory_strength": 0.5
+    },
+    "台": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T12:49:55.980327",
+      "memory_strength": 0.9999999999999999
+    },
+    "叫": {
+      "times_used": 9,
+      "correct": 5,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T12:51:35.547775",
+      "memory_strength": 0.5
+    },
+    "远": {
+      "times_used": 11,
+      "correct": 6,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:30:43.871719",
+      "memory_strength": 0.5
+    },
+    "亲": {
+      "times_used": 10,
+      "correct": 5,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:52:43.229390",
+      "memory_strength": 0.5
+    },
+    "根": {
+      "times_used": 9,
+      "correct": 6,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T11:57:18.145742",
+      "memory_strength": 0.5
+    },
+    "调": {
+      "times_used": 11,
+      "correct": 5,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T12:04:22.269870",
+      "memory_strength": 0.5
+    },
+    "据": {
+      "times_used": 15,
+      "correct": 5,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T13:07:37.207598",
+      "memory_strength": 0.5
+    },
+    "干": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:48:19.749496",
+      "memory_strength": 0.5
+    },
+    "观": {
+      "times_used": 11,
+      "correct": 8,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T13:02:35.462640",
+      "memory_strength": 0.7
+    },
+    "议": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:42:07.076913",
+      "memory_strength": 0.5
+    },
+    "办": {
+      "times_used": 13,
+      "correct": 8,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:48:33.851590",
+      "memory_strength": 0.5
+    },
+    "往": {
+      "times_used": 20,
+      "correct": 9,
+      "incorrect": 11,
+      "last_tested": "2026-05-24T13:03:25.470527",
+      "memory_strength": 0.5
+    },
+    "英": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:11:23.491065",
+      "memory_strength": 0.9999999999999999
+    },
+    "元": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:26:57.135620",
+      "memory_strength": 0.6
+    },
+    "取": {
+      "times_used": 17,
+      "correct": 7,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T12:51:51.887155",
+      "memory_strength": 0.5
+    },
+    "兵": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T11:49:59.914290",
+      "memory_strength": 0.5
+    },
+    "望": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:08:08.526623",
+      "memory_strength": 0.6
+    },
+    "字": {
+      "times_used": 12,
+      "correct": 6,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T13:09:55.376761",
+      "memory_strength": 0.5
+    },
+    "击": {
+      "times_used": 16,
+      "correct": 7,
+      "incorrect": 9,
+      "last_tested": "2026-05-24T12:40:07.026054",
+      "memory_strength": 0.5
+    },
+    "今": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:11:30.786071",
+      "memory_strength": 0.9999999999999999
+    },
+    "飞": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:11:47.779844",
+      "memory_strength": 0.9999999999999999
+    },
+    "极": {
+      "times_used": 10,
+      "correct": 5,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:41:53.597763",
+      "memory_strength": 0.5
+    },
+    "路": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T12:59:53.710883",
+      "memory_strength": 0.9999999999999999
+    },
+    "林": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T11:50:05.950394",
+      "memory_strength": 0.9999999999999999
+    },
+    "服": {
+      "times_used": 10,
+      "correct": 6,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T11:44:39.086869",
+      "memory_strength": 0.5
+    },
+    "始": {
+      "times_used": 12,
+      "correct": 5,
+      "incorrect": 7,
+      "last_tested": "2026-05-24T12:50:55.717724",
+      "memory_strength": 0.5
+    },
+    "联": {
+      "times_used": 24,
+      "correct": 7,
+      "incorrect": 17,
+      "last_tested": "2026-05-24T13:04:27.164399",
+      "memory_strength": 0.5
+    },
+    "觉": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:48:23.229692",
+      "memory_strength": 0.5
+    },
+    "令": {
+      "times_used": 16,
+      "correct": 7,
+      "incorrect": 9,
+      "last_tested": "2026-05-24T12:54:20.834505",
+      "memory_strength": 0.5
+    },
+    "快": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:06:44.974553",
+      "memory_strength": 0.9999999999999999
+    },
+    "影": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:29:27.055800",
+      "memory_strength": 0.6
+    },
+    "南": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:07:53.046319",
+      "memory_strength": 0.9999999999999999
+    },
+    "让": {
+      "times_used": 20,
+      "correct": 11,
+      "incorrect": 9,
+      "last_tested": "2026-05-24T13:03:53.105467",
+      "memory_strength": 0.5
+    },
+    "罗": {
+      "times_used": 11,
+      "correct": 5,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T12:58:53.408657",
+      "memory_strength": 0.5
+    },
+    "记": {
+      "times_used": 11,
+      "correct": 7,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T11:59:52.778378",
+      "memory_strength": 0.5
+    },
+    "告": {
+      "times_used": 12,
+      "correct": 9,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T13:00:12.886537",
+      "memory_strength": 0.7999999999999998
+    },
+    "组": {
+      "times_used": 24,
+      "correct": 10,
+      "incorrect": 14,
+      "last_tested": "2026-05-24T13:11:02.680342",
+      "memory_strength": 0.5
+    },
+    "步": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:11:37.804629",
+      "memory_strength": 0.9999999999999999
+    },
+    "单": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:33:17.023054",
+      "memory_strength": 0.5
+    },
+    "完": {
+      "times_used": 17,
+      "correct": 7,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T13:00:02.645116",
+      "memory_strength": 0.5
+    },
+    "共": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:24:54.634098",
+      "memory_strength": 0.5
+    },
+    "连": {
+      "times_used": 17,
+      "correct": 10,
+      "incorrect": 7,
+      "last_tested": "2026-05-24T13:06:26.135089",
+      "memory_strength": 0.7
+    },
+    "师": {
+      "times_used": 12,
+      "correct": 8,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T12:45:59.604139",
+      "memory_strength": 0.5
+    },
+    "规": {
+      "times_used": 16,
+      "correct": 6,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T13:07:20.495912",
+      "memory_strength": 0.5
+    },
+    "笑": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:09:51.911107",
+      "memory_strength": 0.9999999999999999
+    },
+    "持": {
+      "times_used": 28,
+      "correct": 9,
+      "incorrect": 19,
+      "last_tested": "2026-05-24T13:11:41.297475",
+      "memory_strength": 0.5
+    },
+    "格": {
+      "times_used": 12,
+      "correct": 7,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:55:05.352610",
+      "memory_strength": 0.5
+    },
+    "争": {
+      "times_used": 17,
+      "correct": 7,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T12:54:34.396410",
+      "memory_strength": 0.5
+    },
+    "式": {
+      "times_used": 15,
+      "correct": 9,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T12:50:59.188623",
+      "memory_strength": 0.5
+    },
+    "传": {
+      "times_used": 19,
+      "correct": 9,
+      "incorrect": 10,
+      "last_tested": "2026-05-24T13:07:25.293230",
+      "memory_strength": 0.5
+    },
+    "士": {
+      "times_used": 15,
+      "correct": 8,
+      "incorrect": 7,
+      "last_tested": "2026-05-24T13:04:59.544714",
+      "memory_strength": 0.5
+    },
+    "布": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:13:45.779176",
+      "memory_strength": 0.6
+    },
+    "识": {
+      "times_used": 12,
+      "correct": 6,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T12:28:51.261918",
+      "memory_strength": 0.5
+    },
+    "程": {
+      "times_used": 22,
+      "correct": 5,
+      "incorrect": 17,
+      "last_tested": "2026-05-24T13:09:07.446001",
+      "memory_strength": 0.5
+    },
+    "造": {
+      "times_used": 19,
+      "correct": 10,
+      "incorrect": 9,
+      "last_tested": "2026-05-24T13:10:30.655521",
+      "memory_strength": 0.6
+    },
+    "准": {
+      "times_used": 9,
+      "correct": 6,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:44:30.805969",
+      "memory_strength": 0.5
+    },
+    "具": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-24T12:52:58.754491",
+      "memory_strength": 0.7999999999999999
+    },
+    "运": {
+      "times_used": 10,
+      "correct": 6,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T13:02:15.983838",
+      "memory_strength": 0.5
+    },
+    "爱": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:09:24.690104",
+      "memory_strength": 0.9999999999999999
+    },
+    "该": {
+      "times_used": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "last_tested": "2026-05-24T12:58:01.042741",
+      "memory_strength": 0.7999999999999999
+    },
+    "设": {
+      "times_used": 10,
+      "correct": 6,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T12:59:05.264140",
+      "memory_strength": 0.5
+    },
+    "存": {
+      "times_used": 8,
+      "correct": 5,
+      "incorrect": 3,
+      "last_tested": "2026-05-24T12:33:32.344515",
+      "memory_strength": 0.5
+    },
+    "失": {
+      "times_used": 25,
+      "correct": 8,
+      "incorrect": 17,
+      "last_tested": "2026-05-24T13:11:09.932251",
+      "memory_strength": 0.5
+    },
+    "拉": {
+      "times_used": 7,
+      "correct": 5,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:32:19.098240",
+      "memory_strength": 0.6
+    },
+    "张": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:00:53.964977",
+      "memory_strength": 0.9999999999999999
+    },
+    "流": {
+      "times_used": 8,
+      "correct": 6,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T12:55:51.055820",
+      "memory_strength": 0.7
+    },
+    "转": {
+      "times_used": 11,
+      "correct": 6,
+      "incorrect": 5,
+      "last_tested": "2026-05-24T12:58:37.127436",
+      "memory_strength": 0.5
+    },
+    "交": {
+      "times_used": 13,
+      "correct": 7,
+      "incorrect": 6,
+      "last_tested": "2026-05-24T13:00:58.201299",
+      "memory_strength": 0.5
+    },
+    "怎": {
+      "times_used": 12,
+      "correct": 8,
+      "incorrect": 4,
+      "last_tested": "2026-05-24T13:09:39.269722",
+      "memory_strength": 0.5
+    },
+    "北": {
+      "times_used": 5,
+      "correct": 5,
+      "incorrect": 0,
+      "last_tested": "2026-05-24T13:04:00.578956",
+      "memory_strength": 0.9999999999999999
+    },
+    "万": {
+      "times_used": 9,
+      "correct": 7,
+      "incorrect": 2,
+      "last_tested": "2026-05-24T13:03:42.854200",
+      "memory_strength": 0.7999999999999999
+    },
+    "医": {
       "times_used": 1,
       "correct": 0,
       "incorrect": 1,
-      "last_tested": "2026-05-20T15:31:14.243580"
+      "last_tested": "2026-05-24T14:54:35.081236",
+      "memory_strength": 0.3
     },
-    "活": {
+    "支": {
       "times_used": 1,
-      "correct": 1,
-      "incorrect": 0,
-      "last_tested": "2026-05-20T15:31:22.604156"
+      "correct": 0,
+      "incorrect": 1,
+      "last_tested": "2026-05-24T14:54:59.424300",
+      "memory_strength": 0.3
     }
   }
 }

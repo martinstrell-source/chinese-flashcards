@@ -88,13 +88,12 @@ def get_category_cards(category: int) -> list:
     return [c for c in all_cards if c["category"] == category]
 
 def _weighted_pick(candidates: list, exclude_hanzi: str | None = None) -> dict | None:
-    """Pick a card using weighted random selection, prioritising cards with more
-    incorrect answers. Excludes the current card when possible to avoid repeats."""
+    """Pick a card weighted by low memory strength. Excludes the current card when possible."""
     card_stats = st.session_state.get("card_stats", {})
     pool = [c for c in candidates if c["hanzi"] != exclude_hanzi] or candidates
     if not pool:
         return None
-    weights = [card_stats.get(c["hanzi"], {}).get("incorrect", 0) + 1 for c in pool]
+    weights = [max(0.1, 1.0 - card_stats.get(c["hanzi"], {}).get("memory_strength", 0.5)) for c in pool]
     return random.choices(pool, weights=weights, k=1)[0]
 
 def next_card() -> dict | None:
@@ -138,16 +137,21 @@ def init_category(category: int):
 
 
 def render_category_selection():
-    st.markdown("### Choose a category")
+    st.markdown("### Choose a Level")
     saved_cats = load_progress().get("categories", {})
 
     options = []
+    last_mastered = 0
     for cat in range(1, MAX_CATEGORY + 1):
+        cat_cards = get_category_cards(cat)
         n_mastered = len(saved_cats.get(str(cat), {}).get("mastered", []))
-        label = f"Category {cat}  (ranks {(cat-1)*100+1}–{cat*100})  —  {n_mastered}/100 mastered"
+        if n_mastered == len(cat_cards):
+            last_mastered = cat
+        label = f"Level {cat}  (ranks {(cat-1)*100+1}–{cat*100})  —  {n_mastered}/100 mastered"
         options.append(label)
 
-    choice_label = st.selectbox("Category", options, index=0)
+    default_index = min(last_mastered, MAX_CATEGORY - 1)
+    choice_label = st.selectbox("Level", options, index=default_index)
     chosen_cat = options.index(choice_label) + 1
 
     if st.button("Start"):
@@ -161,7 +165,7 @@ def render_graduation():
     incorrect = st.session_state.incorrect
     answered  = correct + incorrect
     st.balloons()
-    st.markdown(f"## Category {cat} complete!")
+    st.markdown(f"## Level {cat} complete!")
     st.markdown("You answered every character correctly 5 times in a row.")
     col1, col2, col3 = st.columns(3)
     col1.metric("Answered", answered)
@@ -171,12 +175,12 @@ def render_graduation():
     col_a, col_b = st.columns(2)
     with col_a:
         if cat < MAX_CATEGORY:
-            if st.button(f"Advance to Category {cat + 1}"):
+            if st.button(f"Advance to Level {cat + 1}"):
                 init_category(cat + 1)
                 st.rerun()
         else:
             st.markdown("### You've mastered all 2500 characters!")
     with col_b:
-        if st.button("Choose category"):
+        if st.button("Choose level"):
             st.session_state.selecting = True
             st.rerun()
